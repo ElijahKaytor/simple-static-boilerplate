@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                     'www/static/js/min/compiled.min.js': [
                         
                         // Libraries
-                        'lib/jquery-core-2.1.0pre',
+                        'lib/jquery.min',
                         
                         // Main JS file
                         'index',
