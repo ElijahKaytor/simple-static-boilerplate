@@ -1,0 +1,5 @@
+[submodule "www/static/js/lib/jquery"]
+	path = www/static/js/lib/jquery
+	url = git://github.com/jquery/jquery.git
+	branch = 1.11.1
+
