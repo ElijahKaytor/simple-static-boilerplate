@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                     'www/static/js/min/compiled.min.js': [
                         
                         // Libraries
-                        'lib/jquery.min',
+                        'lib/jquery',
                         
                         // Main JS file
                         'index',
