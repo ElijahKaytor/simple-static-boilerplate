@@ -1,0 +1,30 @@
+{
+    "name": "simple-static-boilerplate",
+    "description": "A simple boilerplate for static sites. Uses Grunt & SASS/Compass.",
+    "version": "0.0.1",
+    "private": true,
+    "repository": {
+        "type" : "git",
+        "url" : "git@github.com:ElijahKaytor/simple-static-boilerplate.git"
+    },
+    "contributors": [
+        {
+            "name": "Elijah Kaytor",
+            "email": "elijah@kaytor.ca"
+        }
+    ],
+    "maintainers": [
+        {
+            "name": "Elijah Kaytor",
+            "email": "elijah@kaytor.ca"
+        }
+    ],
+    "bugs": { "email": "elijah@kaytor.ca" },
+    "dependencies": {
+        "grunt": "~0.4.2",
+        "grunt-cli": "~0.1.11",
+        "grunt-contrib-sass": "~0.6.0",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-contrib-uglify": "~0.3.2"
+    }
+}
