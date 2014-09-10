@@ -1,1 +1,1 @@
-jquery/dist/jquery.js
+jquery/jquery.js

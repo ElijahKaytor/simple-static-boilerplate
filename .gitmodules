@@ -1,15 +1,15 @@
 [submodule "www/static/js/lib/jquery"]
 	path = www/static/js/lib/jquery
-	url = git://github.com/jquery/jquery.git
+	url = https://github.com/components/jquery.git
 	branch = 1.11.1
 
 [submodule "www/static/js/lib/underscore"]
 	path = www/static/js/lib/underscore
-	url = https://github.com/jashkenas/underscore.git
-	branch = 1.7.0
+	url = https://github.com/components/underscore.git
+	branch = 1.4.2
 
 [submodule "www/static/js/lib/backbone"]
 	path = www/static/js/lib/backbone
-	url = https://github.com/jashkenas/backbone.git
-	branch = 1.1.2
+	url = https://github.com/components/backbone.git
+	branch = 1.1.0
 
