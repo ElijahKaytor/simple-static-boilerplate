@@ -3,3 +3,8 @@
 	url = git://github.com/jquery/jquery.git
 	branch = 1.11.1
 
+[submodule "www/static/js/lib/underscore"]
+	path = www/static/js/lib/underscore
+	url = https://github.com/jashkenas/underscore.git
+	branch = 1.7.0
+
