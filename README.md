@@ -25,17 +25,20 @@ This makes for easy library version management, and keeps the commits cleaner.
 For example, to change the jQuery version to `2.1.1`
 
 ```sh
-## Set the jQuery version
-JQUERY_VERSION=2.1.1
+## Submodule configuration
+SUBMODULE_TAG=Ember.js                  ## Submodule Git Tag
+SUBMODULE_VERSION=1.8.0-beta.5          ## Submodule version to checkout
+SUBMODULE_LOCAL_PATH=www/static/js/lib  ## Path to store the submodule
+SUBMODULE_LOCAL_NAME=ember              ## Name of the submodule repo and link
 
 ## Update .gitmodules
-git config -f .gitmodules submodule.www/static/js/lib/jquery.branch $JQUERY_VERSION
-## Checkout the new version of jQuery
-git --git-dir .git/modules/www/static/js/lib/jquery checkout $JQUERY_VERSION
+git config -f .gitmodules submodule.$SUBMODULE_LOCAL_PATH/$SUBMODULE_LOCAL_NAME.branch $SUBMODULE_VERSION
+## Checkout the new version of the module
+git --git-dir .git/modules/$SUBMODULE_LOCAL_PATH/$SUBMODULE_LOCAL_NAME checkout $SUBMODULE_VERSION
 ## Add the .gitmodules and the submodule to the commit
-git add .gitmodules www/static/js/lib/jquery
-## Commit the new version of jQuery
-git commit -m "JavaScript,Libraries,jQuery: jQuery @ $JQUERY_VERSION"
+git add .gitmodules $SUBMODULE_LOCAL_PATH/$SUBMODULE_LOCAL_NAME
+## Commit the new version of the module
+git commit -m "JavaScript,Libraries,$SUBMODULE_TAG: $SUBMODULE_TAG @ $SUBMODULE_VERSION"
 ```
 
 
