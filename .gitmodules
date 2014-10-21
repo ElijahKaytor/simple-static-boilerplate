@@ -13,3 +13,8 @@
 	url = https://github.com/components/backbone.git
 	branch = 1.1.0
 
+[submodule "www/static/js/lib/ember"]
+	path = www/static/js/lib/ember
+	url = https://github.com/components/ember.git
+	branch = 1.7.0
+
