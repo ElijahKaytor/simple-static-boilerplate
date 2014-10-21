@@ -22,7 +22,7 @@ Libraries are included as [git submodules](http://git-scm.com/docs/git-submodule
 
 This makes for easy library version management, and keeps the commits cleaner.
 
-For example, to change the jQuery version to `2.1.1`
+For example, to change the Ember.js version to `1.8.0-beta.5`
 
 ```sh
 ## Submodule configuration
