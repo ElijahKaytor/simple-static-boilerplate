@@ -22,14 +22,14 @@ Libraries are included as [git submodules](http://git-scm.com/docs/git-submodule
 
 This makes for easy library version management, and keeps the commits cleaner.
 
-For example, to change the Ember.js version to `1.8.0-beta.5`
+For example, to checkout `Ember.js @ 1.8.0-beta.5`
 
 ```sh
 ## Submodule configuration
-SUBMODULE_NAME=ember                ## Name of the submodule repo and link
+SUBMODULE_NAME=ember                ## Name of the submodule
 SUBMODULE_VERSION=1.8.0-beta.5      ## Submodule version to checkout
-SUBMODULE_TAG=Ember.js              ## Submodule Git Tag
-SUBMODULE_PATH=www/static/js/lib    ## Path to store the submodule
+SUBMODULE_TAG=Ember.js              ## Submodule Git tag, for $ git log --grep
+SUBMODULE_PATH=www/static/js/lib    ## Path to submodules
 
 ## Update .gitmodules
 git config -f .gitmodules submodule.$SUBMODULE_PATH/$SUBMODULE_NAME.branch $SUBMODULE_VERSION
@@ -44,13 +44,17 @@ git commit -m "JavaScript,Libraries,$SUBMODULE_TAG: $SUBMODULE_TAG @ $SUBMODULE_
 
 ## Adding a Library
 
+Libraries are easy to include with the following script, as well
+
+For example, to add `Ember.js @ 1.7.0`
+
 ```sh
 ## Submodule configuration
 SUBMODULE_URL="https://github.com/components/ember.git"
-SUBMODULE_NAME=ember                ## Name of the submodule repo and link
+SUBMODULE_NAME=ember                ## Name of the submodule
 SUBMODULE_VERSION=1.7.0             ## Submodule version to checkout
-SUBMODULE_TAG=Ember.js              ## Submodule Git Tag
-SUBMODULE_PATH=www/static/js/lib    ## Path to store the submodule
+SUBMODULE_TAG=Ember.js              ## Submodule Git tag, for $ git log --grep
+SUBMODULE_PATH=www/static/js/lib    ## Path to submodules
 
 ## Add the submodule
 git submodule add $SUBMODULE_URL $SUBMODULE_PATH/$SUBMODULE_NAME
